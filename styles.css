@@ -113,7 +113,7 @@ h1 {
   background-color: #000;
   border-top: 2px solid #ff8c42;
 }
-
+/*Footer*/
 .footer-content {
   display: flex;
   flex-direction: column;
@@ -160,23 +160,24 @@ h1 {
   font-size: 0.45rem;
   margin: 0;
 }
+/*@media*/
 
 @media (min-width: 480px) {
   .message {
     top: 1%;
-    padding: clamp(1rem, 4vw, 2rem);
+    padding: clamp(0.75rem, 3vw, 1.5rem);
   }
 
   .message p {
-    font-size: clamp(1rem, 4.5vw, 1.5rem);
+    font-size: clamp(0.85rem, 3vw, 1.2rem);
   }
 
   .message h1 {
-    font-size: clamp(2rem, 8vw, 5rem);
+    font-size: clamp(2rem, 6vw, 3.8rem);
   }
 
   .ti-diamond {
-    font-size: clamp(1.1rem, 4.5vw, 1.5rem);
+    font-size: clamp(0.85rem, 3vw, 1.2rem);
   }
 
   .poster-card {
@@ -185,13 +186,40 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  .poster-card {
-    max-width: 1023px;
+  .message {
+    top: 2%;
+    padding: clamp(0.75rem, 2vw, 1.25rem);
+  }
+
+  .message p {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+  }
+
+  .message h1 {
+    font-size: clamp(2rem, 4.5vw, 3.4rem);
+  }
+
+  .ti-diamond {
+    font-size: clamp(0.75rem, 2vw, 1rem);
   }
 }
 
 @media (min-width: 1024px) {
-  .poster-card {
-    max-width: 1366px;
+  .message {
+    top: 2%;
+    padding: clamp(0.5rem, 1.5vw, 1rem);
+  }
+
+  .message p {
+    font-size: clamp(0.7rem, 1.5vw, 0.95rem);
+  }
+
+  .message h1 {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+  }
+
+  .ti-diamond {
+    font-size: clamp(0.7rem, 1.5vw, 0.95rem);
   }
 }
+
